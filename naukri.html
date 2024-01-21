@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Your Job Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 70px 0 0;
+      background-color: #f1eeee;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #004080, #001f40);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      padding: 8px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #004080;
+    }
+
+    .search-container {
+      text-align: center;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #001f40;
+    }
+
+    .job-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .job-category,
+    .research-searches {
+      width: 45%;
+    }
+
+    .job-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .job-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    .job-details {
+      color: #666;
+      margin-top: 15px;
+    }
+
+    .job-details span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="logo.jpg" alt="Symbol">
+      <a href="#">Home</a>
+      <a href="#">Company Reviews</a>
+      <a href="#">Salary Guide</a>
+    </nav>
+  </header>
+
+  <div class="search-container">
+    <input type="text" placeholder="Enter job title...">
+    <button onclick="findJobs()">Find Jobs</button>
+  </div>
+
+  <div class="job-container">
+    <div class="job-category">
+      <h2>Job Feed</h2>
+      <div class="job-card">
+        <h3>Front End Developer</h3>
+        <p class="job-details"><span>Location:</span>Mumbai</p>
+        <p class="job-details"><span>Type:</span> Full-Time</p>
+        <p class="job-details"><span>Experience:</span> 3+ years</p>
+      </div>
+      <div class="job-card">
+        <h3>Senoir Java Developer</h3>
+        <p class="job-details"><span>Location:</span>Bengaluru</p>
+        <p class="job-details"><span>Type:</span> Contract</p>
+        <p class="job-details"><span>Experience:</span> 5+ years</p>
+      </div>
+      <div class="job-card">
+        <h3>Data Scientist</h3>
+        <p class="job-details"><span>Location:</span>Hyberbad,Raidurg</p>
+        <p class="job-details"><span>Type:</span> Remote</p>
+        <p class="job-details"><span>Experience:</span> 2+ years</p>
+      </div>
+    </div>
+
+    <div class="research-searches">
+      <h2>Recent Searches</h2>
+      <div class="job-card">
+        <h3>Web Developer</h3>
+        <p class="job-details"><span>Location:</span>Puna</p>
+        <p class="job-details"><span>Type:</span> Part-Time</p>
+        <p class="job-details"><span>Experience:</span> Entry Level</p>
+      </div>
+      <div class="job-card">
+        <h3>Software Testing Engineer</h3>
+        <p class="job-details"><span>Location:</span>Bengaluru </p>
+        <p class="job-details"><span>Type:</span> Internship</p>
+        <p class="job-details"><span>Experience:</span> 1+ year</p>
+      </div>
+      <div class="job-card">
+        <h3></h3>
+        <p class="job-details"><span>Location:</span>Hyberbad,Gachibowli</p>
+        <p class="job-details"><span>Type:</span> Freelance</p>
+        <p class="job-details"><span>Experience:</span> 4+ years</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function findJobs() {
+      alert("Implement job search functionality here!");
+    }
+  </script>
+
+</body>
+</html>
